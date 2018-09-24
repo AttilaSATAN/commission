@@ -1,0 +1,26 @@
+{
+  "name": "attila/Commission",
+  "config": {
+    "optimize-autoloader": true
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^6.5",
+    "pds/skeleton": "^1.0"
+  },
+  "authors": [{
+    "name": "Attila Satan",
+    "email": "attila.satan@gmail.com"
+  }],
+  "autoload": {
+    "psr-4": {
+      "Attila\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Attila\\": "tests/"
+    }
+   },
+    "bin": ["bin/commission"],
+    "require": {}
+}
