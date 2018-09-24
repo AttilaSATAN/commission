@@ -1,0 +1,12 @@
+#!/usr/bin/env php
+<?php 
+//https://gist.github.com/mariusbalcytis/1ccd3d4a91b31bb6cc3fd2498edc657e
+require_once "config/config.php";
+
+if(!array_key_exists(1, $argv)){
+  throw new \UnexpectedValueException('File name must be given');
+}
+
+$app = new Attila\Commission\App($argv[1]);
+
+$app->init();
